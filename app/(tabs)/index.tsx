@@ -3,12 +3,18 @@ import { StyleSheet } from "react-native";
 import { Text, View } from "@/components/Themed";
 import { Stack, Tabs, useRouter } from "expo-router";
 import { TaskProvider } from "@/Context/TaskProvider";
+import { useEffect } from "react";
 
 export default function TabOneScreen() {
   const router = useRouter();
-  setTimeout(() => {
-    router.push("/tasks");
-  }, 1000);
+
+  useEffect(() => {
+    console.log("ok");
+    setTimeout(() => {
+      router.push("/tasks");
+    }, 1000);
+  });
+
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />

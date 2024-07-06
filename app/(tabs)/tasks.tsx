@@ -1,6 +1,5 @@
-import { Alert, StyleSheet } from "react-native";
+import { Alert, StyleSheet, Keyboard } from "react-native";
 
-import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
 import { Stack, Tabs } from "expo-router";
 import Add from "@/components/Add";
@@ -22,6 +21,7 @@ export default function TabTwoScreen() {
         time: getCurrentTime(),
       };
       addTask(data);
+      Keyboard.dismiss();
     } else {
       Alert.alert("Error", 'The field "Add task" is empty!');
     }
@@ -48,5 +48,6 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 24,
+    fontWeight: "bold",
   },
 });

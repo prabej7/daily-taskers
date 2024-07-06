@@ -59,7 +59,6 @@ export const TaskProvider: React.FC<Props> = ({ children }) => {
   );
 };
 
-// Custom hook to use the TaskContext
 export const useTaskContext = () => {
   const context = useContext(TaskContext);
   if (context === undefined) {
