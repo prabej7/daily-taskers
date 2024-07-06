@@ -9,7 +9,6 @@ export default function TabOneScreen() {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("ok");
     setTimeout(() => {
       router.push("/tasks");
     }, 1000);

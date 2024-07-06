@@ -8,7 +8,7 @@ import { Task, useTaskContext } from "@/Context/TaskProvider";
 import AllTasks from "@/components/AllTasks";
 import getCurrentTime from "@/utils/time";
 export default function TabTwoScreen() {
-  const { tasks, addTask } = useTaskContext();
+  const { addTask } = useTaskContext();
   const [task, setTask] = useState<string>("");
   const handleChange = (text: string) => {
     setTask(text);
