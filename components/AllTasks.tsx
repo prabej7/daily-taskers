@@ -5,12 +5,14 @@ import Checkbox from "expo-checkbox";
 import React, { useEffect, useState } from "react";
 import { Platform } from "react-native";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import useTheme from "@/hooks/useTheme";
 
 interface DeleteProps {
   onPress?: () => void;
 }
 
 const AllTasks = () => {
+  const theme = useTheme();
   const { tasks, handleComplete, deleteCompleteTasks } = useTaskContext();
   const [isMenuClicked, setMenuClicked] = useState<boolean>(false);
   const handleCheck = (id: number) => {
@@ -21,7 +23,7 @@ const AllTasks = () => {
     return (
       <>
         <View style={styles.deletebutton}>
-          <Text style={styles.deleteText} onPress={onPress}>
+          <Text style={[styles.deleteText]} onPress={onPress}>
             Delete
           </Text>
         </View>
@@ -50,14 +52,14 @@ const AllTasks = () => {
             <Text style={{ fontSize: 18 }}>Your Tasks :</Text>
             <FontAwesome
               name="list"
-              style={styles.icon}
+              style={[styles.icon, { color: theme.inputbg }]}
               onPress={handleMenuClick}
             />
           </View>
         ) : (
           <Text
             style={{
-              color: "#00000069",
+              color: theme.text,
               textAlign: "center",
               marginTop: "50%",
             }}
@@ -69,13 +71,15 @@ const AllTasks = () => {
         {tasks.map((task, index) => {
           return (
             <React.Fragment key={index}>
-              <View style={styles.task}>
-                <View style={{ backgroundColor: "#eeeeee" }}>
+              <View style={[styles.task, { backgroundColor: theme.cardbg }]}>
+                <View style={{ backgroundColor: theme.cardbg }}>
                   <Text
                     style={[
                       styles.title,
                       {
-                        color: task.isCompleted ? "#00000069" : "black",
+                        color: task.isCompleted
+                          ? theme.opacityDown
+                          : theme.text,
                         textDecorationLine: task.isCompleted
                           ? "line-through"
                           : "none",
@@ -90,7 +94,7 @@ const AllTasks = () => {
                 <Checkbox
                   onValueChange={() => handleCheck(index)}
                   value={task.isCompleted}
-                  color={"black"}
+                  color={task.isCompleted ? "#2ac256" : undefined}
                   style={{ borderRadius: 50 }}
                 />
               </View>
