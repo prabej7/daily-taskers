@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Daily Tasker",
-    "slug": "Daily Tasker",
-    "version": "1.0.0",
+    "name": "Daily Taskers",
+    "slug": "daily-taskers",
+    "version": "10.1.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -36,7 +36,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "6d710f27-cf9f-4d44-a966-7a5b71c3049d"
+        "projectId": "20da09ee-55d4-4c6e-9fc8-b7bb5bb68884"
       }
     }
   }

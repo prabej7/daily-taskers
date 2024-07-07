@@ -4,6 +4,8 @@
 
 **Daily Tasker** is a task management mobile application built with Expo and React Native, designed to help you manage and track your daily tasks efficiently. This app allows you to add, complete, and delete tasks, ensuring you stay productive throughout the day.
 
+## [Download](https://expo.dev/artifacts/eas/ndko2HoRsaCF4XKVZjnSyg.apk)
+
 ## Table of Contents
 
 - [Features](#features)
