@@ -1,6 +1,6 @@
 # Daily Tasker
 
-![Daily Tasker Logo](./assets/images/app.png)
+![Daily Tasker Logo](./assets/images/icon.png)
 
 **Daily Tasker** is a task management mobile application built with Expo and React Native, designed to help you manage and track your daily tasks efficiently. This app allows you to add, complete, and delete tasks, ensuring you stay productive throughout the day.
 
@@ -26,8 +26,6 @@
 - **Persistent Storage**: Tasks are saved locally using AsyncStorage.
 - **User-Friendly Interface**: Intuitive and easy-to-use interface.
 
-
-
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -47,24 +45,24 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. **Clone the repository**:
 
-    ```bash
-    git clone https://github.com/prabej7/daily-taskers.git
-    cd daily-taskers
-    ```
+   ```bash
+   git clone https://github.com/prabej7/daily-taskers.git
+   cd daily-taskers
+   ```
 
 2. **Install dependencies**:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ### Running the App
 
 1. **Start the Expo development server**:
 
-    ```bash
-    expo start
-    ```
+   ```bash
+   expo start
+   ```
 
 2. **Open the app**:
 
@@ -74,11 +72,13 @@ Follow these instructions to get a copy of the project up and running on your lo
 ## Usage
 
 - **Adding a Task**:
+
   1. Navigate to the Add Task screen.
   2. Enter the task description and deadline.
   3. Click the "Add Task" button to save the task.
 
 - **Marking a Task as Completed**:
+
   1. In the task list, click on the task to mark it as completed.
 
 - **Deleting Completed Tasks**:
