@@ -30,8 +30,10 @@
 
 ## Screenshots
 
-![Daily Tasker Logo](./assets/images/splash.png)
-![Daily Tasker Logo](./assets/images/screenshot.jpeg)
+<div style="display: flex; flex-direction: row; gap: 10px;">
+  <img src="./assets/images/splash.png" alt="Daily Tasker Logo" style="width: 100px; height: auto;" />
+  <img src="./assets/images/screenshot.jpeg" alt="Daily Tasker Screenshot" style="width: 100px; height: auto;" />
+</div>
 
 ## Getting Started
 
