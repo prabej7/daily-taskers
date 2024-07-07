@@ -28,6 +28,11 @@
 - **Persistent Storage**: Tasks are saved locally using AsyncStorage.
 - **User-Friendly Interface**: Intuitive and easy-to-use interface.
 
+## Screenshots
+
+![Daily Tasker Logo](./assets/images/splash.png)
+![Daily Tasker Logo](./assets/images/screenshot.jpeg)
+
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
