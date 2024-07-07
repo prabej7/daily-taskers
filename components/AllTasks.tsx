@@ -72,7 +72,11 @@ const AllTasks = () => {
           return (
             <React.Fragment key={index}>
               <View style={[styles.task, { backgroundColor: theme.cardbg }]}>
-                <View style={{ backgroundColor: theme.cardbg }}>
+                <View
+                  style={{
+                    backgroundColor: theme.cardbg,
+                  }}
+                >
                   <Text
                     style={[
                       styles.title,
@@ -129,9 +133,12 @@ const styles = StyleSheet.create({
   title: {
     fontWeight: "bold",
     fontSize: 18,
+    paddingTop: 12,
+    maxWidth: 215,
   },
   time: {
     fontWeight: "100",
+    paddingBottom: 12,
   },
   menu: {
     display: "flex",
